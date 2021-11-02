@@ -1,0 +1,57 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #eff3f7;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+}
+.tasks{
+    padding: 0;
+}
+.task-card{
+    margin: 1rem 0;
+    border-radius: 5px;
+    box-shadow:
+    2px 2px 10px #c9c9c9,
+    -2px -2px 10px #fdfdfd;
+    padding: 1rem;
+    background-color:  rgb(194, 193, 255);
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 1em;
+
+  }
+
+  .task-name {
+    /* margin-bottom: 1rem ; */
+    flex-basis:100%;
+  }
+
+  .task-card .edit, .task-card .delete{
+    color: white;
+    border-radius: 5px;
+    width: 5rem;
+    height: 2rem;
+    border: none;
+  }
+
+ .task-card .edit {
+    background-color: rgb(48, 48, 253);
+    
+  }
+
+  .task-card .delete {
+    background-color: rgb(245, 46, 46);
+    
+  }
