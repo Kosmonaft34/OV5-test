@@ -6,6 +6,14 @@ body{
     background-color: #eff3f7;
 }
 
+html{
+  /* 16px */
+}
+
+:root {
+  --edit-color: rgb(60,60,197);
+}
+
 .container{
     margin: 0 auto;
     max-width: 600px;
@@ -27,15 +35,20 @@ h1{
     background-color:  rgb(194, 193, 255);
     list-style: none;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;/* Кнопки переноса элемента*/
     justify-content: flex-end;
     gap: 0,5em;
+    transition: transform .5s; /*плавность увеличивания перехода карточки при наведении*/
 
+  }
+
+  .task-card:hover{
+    transform: scale(1.1, 1.1) translateY(-20px);/*увеличивает карточку при наведении,translateY(-20px) сдвигает вверх трансформацию*/
   }
 
   .task-name {
     /* margin-bottom: 1rem ; */
-    flex-basis:100%;
+    flex-basis:100%;/*Базовая ширина разметки во флэкс элементе от родителя*/
   }
 
   .task-card .edit, .task-card .delete{
@@ -49,7 +62,7 @@ h1{
   }
 
  .task-card .edit {
-    background-color: rgb(60, 60, 197);
+    background-color: var(--edit-color);
     
   }
 
