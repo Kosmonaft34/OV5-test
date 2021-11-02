@@ -29,7 +29,7 @@ h1{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    gap: 1em;
+    gap: 0,5em;
 
   }
 
@@ -44,14 +44,34 @@ h1{
     width: 5rem;
     height: 2rem;
     border: none;
+    cursor: pointer;
+    transition: all .5s;
   }
 
  .task-card .edit {
-    background-color: rgb(48, 48, 253);
+    background-color: rgb(60, 60, 197);
     
   }
 
   .task-card .delete {
-    background-color: rgb(245, 46, 46);
+    background-color: rgb(209, 45, 45);
+    
+  }
+ .task-card .edit:hover {
+    background-color: rgb(32, 32, 175);
+    
+  }
+
+  .task-card .delete:hover {
+    background-color: rgb(184, 14, 14);
+    
+  }
+ .task-card .edit:active {
+    box-shadow: inset 0 0 5px 3px rgb(68, 68, 252);
+    
+  }
+
+  .task-card .delete:active {
+    box-shadow: inset 0 0 5px 3px rgb(245, 59, 84);
     
   }
