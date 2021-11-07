@@ -35,9 +35,9 @@ h1{
     background-color:  rgb(194, 193, 255);
     list-style: none;
     display: flex;
-    flex-wrap: wrap;/* Кнопки переноса элемента*/
-    justify-content: flex-end;
-    gap: 0,5em;
+    flex-wrap: wrap;/* Кнопки переноса элемента на следующую строчку*/
+    justify-content: flex-end;/*выравнивание по правому краю*/
+    gap: 0,5em;/*сетка во флэксбоксе*/
     transition: transform .5s; /*плавность увеличивания перехода карточки при наведении*/
 
   }
