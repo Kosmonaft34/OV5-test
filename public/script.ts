@@ -86,4 +86,4 @@ function toggleCheckbox(textElem: HTMLInputElement){
    }
 }
 
-tasksElem.innerHTML = taskListHtml
+tasksElem!.innerHTML = taskListHtml
