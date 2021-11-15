@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "tsc": "tsc --watch"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Kosmonaft34/OV5-test/issues"
   },
-  "homepage": "https://github.com/Kosmonaft34/OV5-test#readme"
+  "homepage": "https://github.com/Kosmonaft34/OV5-test#readme",
+  "devDependencies": {
+    "typescript": "^4.4.4"
+  }
 }
